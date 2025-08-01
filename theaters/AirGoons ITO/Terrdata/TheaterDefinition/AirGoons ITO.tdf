@@ -1,0 +1,77 @@
+#------------------
+# Israel TDF file
+#------------------
+
+# shown in the pick list
+name AirGoons ITO
+
+# Title shown on theater page
+desc AirGoons ITO for Falcon BMS v4.38 - Restart BMS after Change!
+
+
+# bitmap to display on theater page
+bitmap Add-On AirGoons ITO\Terrdata\theaterdefinition\AirGoons ITO.TGA
+
+# in general, you can miss out most of these, and it
+# will use the default, unless another theater changes it
+# so probably best to put in explicitly.
+
+# Where to load Custom imagery for Tactical Reference  
+tacrefpicsdir Add-On Israel\Art\TacRData
+
+# Where the campaign directory is
+campaigndir Add-On Israel\campaign
+
+# where the terrain data is
+terraindir Add-On Israel\Terrdata\Israel
+
+# which tileset to use - overrides the global setting in the cfg file
+tileset POLAK
+
+# where Art is loaded from
+artdir Add-On Israel
+
+# Cockpit dir
+cockpitdir Add-on Israel\Art\Ckptart
+
+# Movies
+#moviedir 
+
+# Music
+musicdir Add-On Israel
+ 
+# UI-Sounds 
+#uisounddir Sounds
+
+# Default Objects
+objectdir Add-On Israel\Terrdata\objects
+
+# Misc textures
+misctexdir Terrdata\misctex
+
+# 3D Object files
+3ddatadir Add-On Israel\Terrdata\objects
+
+# Minimum TACAN channel
+mintacan 1
+
+# Sounds dir
+sounddir Add-On Israel\Sounds
+
+# SimData dir
+simdatadir Add-On Israel\Sim
+
+# Splash Screens
+splashdir Add-On Israel\art\splash
+
+#Subtitles
+subtitlesdir Add-On Israel\Sounds
+
+# Theater specific tacref dir
+tacrefdir Add-On Israel\Terrdata
+
+# use double resolution 2D UI map
+doubleres2dmap 1
+
+# magnetic declination
+magneticdeclination 0
