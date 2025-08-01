@@ -70,13 +70,18 @@ def cleanup(build_dir):
 def main():
     bms_dir = get_bms_dir()
     if bms_dir is None:
-        print("[ERROR] main:\tcould not query bms install directory")
+        print("[ERROR] main():  could not query bms install directory")
         return
 
     arguments = parse_arguments()
     config = Configuration(arguments.config)
 
     source_dir = "{0}/{1}".format(bms_dir, arguments.source)
+    if not os.path.exists(source_dir):
+        print("[ERROR] main():  source does not exist ({0})".format(source_dir))
+        return
+
+
     add_on_name = "Add-On {0}".format(arguments.name)
     build_dir = "{0}/{1}".format(arguments.build, add_on_name)
     zip_path = os.path.abspath("{0}/{1} v{2}".format(arguments.artifacts, arguments.name, arguments.version))
