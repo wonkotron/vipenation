@@ -20,7 +20,7 @@ bitmap Add-On AirGoons ITO\Terrdata\theaterdefinition\AirGoons ITO.TGA
 tacrefpicsdir Add-On Israel\Art\TacRData
 
 # Where the campaign directory is
-campaigndir Add-On Israel\campaign
+campaigndir Add-On AirGoons ITO\campaign
 
 # where the terrain data is
 terraindir Add-On Israel\Terrdata\Israel

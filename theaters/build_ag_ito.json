@@ -7,6 +7,9 @@
                 "KoreaObj_HiRes",
                 "*.bat"
             ]
+        },
+        "Campaign": {
+            "exclude": []
         }
     }
 }
