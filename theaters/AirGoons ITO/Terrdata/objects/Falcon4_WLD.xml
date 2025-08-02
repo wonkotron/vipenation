@@ -11226,15 +11226,23 @@
         <Name>F-16-40 EAF 1/9</Name>
         <WpnIdx_0>174</WpnIdx_0>
         <WpnIdx_1>175</WpnIdx_1>
+        <WpnIdx_2>158</WpnIdx_2>
+        <WpnIdx_3>159</WpnIdx_3>
         <WpnCount_0>1</WpnCount_0>
         <WpnCount_1>1</WpnCount_1>
+        <WpnCount_2>1</WpnCount_2>
+        <WpnCount_3>1</WpnCount_3>
     </WLD>
     <WLD Num="473">
         <Name>F-16-40 EAF 2/8</Name>
         <WpnIdx_0>174</WpnIdx_0>
         <WpnIdx_1>175</WpnIdx_1>
+        <WpnIdx_2>158</WpnIdx_2>
+        <WpnIdx_3>159</WpnIdx_3>
         <WpnCount_0>1</WpnCount_0>
         <WpnCount_1>1</WpnCount_1>
+        <WpnCount_2>1</WpnCount_2>
+        <WpnCount_3>1</WpnCount_3>
     </WLD>
     <WLD Num="474">
         <Name>F-16-40 EAF 3/7</Name>
@@ -11267,6 +11275,12 @@
         <WpnIdx_26>326</WpnIdx_26>
         <WpnIdx_27>327</WpnIdx_27>
         <WpnIdx_28>328</WpnIdx_28>
+        <WpnIdx_29>10</WpnIdx_29>
+        <WpnIdx_30>158</WpnIdx_30>
+        <WpnIdx_31>159</WpnIdx_31>
+        <WpnIdx_32>157</WpnIdx_32>
+        <WpnIdx_33>143</WpnIdx_33>
+        <WpnIdx_34>270</WpnIdx_34>
         <WpnCount_0>1</WpnCount_0>
         <WpnCount_1>1</WpnCount_1>
         <WpnCount_2>1</WpnCount_2>
@@ -11296,6 +11310,12 @@
         <WpnCount_26>2</WpnCount_26>
         <WpnCount_27>2</WpnCount_27>
         <WpnCount_28>2</WpnCount_28>
+        <WpnCount_29>1</WpnCount_29>
+        <WpnCount_30>1</WpnCount_30>
+        <WpnCount_31>1</WpnCount_31>
+        <WpnCount_32>1</WpnCount_32>
+        <WpnCount_33>1</WpnCount_33>
+        <WpnCount_34>1</WpnCount_34>
     </WLD>
     <WLD Num="475">
         <Name>F-16-40 EAF 4/6</Name>
