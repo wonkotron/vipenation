@@ -1,0 +1,149 @@
+network {
+  teams {
+    team_number: TEAM_0
+  }
+  teams {
+    team_number: TEAM_1
+    nets {
+      channel_number: 0
+      npg_type: NPG_PPLIA
+      npg_type: NPG_PPLIB
+      npg_type: NPG_SURVINFO
+    }
+    nets {
+      channel_number: 44
+      npg_type: NPG_MISSION
+    }
+    nets {
+      channel_number: 23
+      npg_type: NPG_EW
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 91
+      npg_type: NPG_MISSION
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 115
+      npg_type: NPG_MISSION
+    }
+  }
+  teams {
+    team_number: TEAM_2
+    nets {
+      channel_number: 0
+      npg_type: NPG_PPLIA
+      npg_type: NPG_PPLIB
+      npg_type: NPG_SURVINFO
+    }
+    nets {
+      channel_number: 43
+      npg_type: NPG_MISSION
+    }
+    nets {
+      channel_number: 22
+      npg_type: NPG_EW
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 90
+      npg_type: NPG_MISSION
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 114
+      npg_type: NPG_MISSION
+    }
+  }
+  teams {
+    team_number: TEAM_3
+  }
+  teams {
+    team_number: TEAM_4
+    nets {
+      channel_number: 0
+      npg_type: NPG_PPLIA
+      npg_type: NPG_PPLIB
+      npg_type: NPG_SURVINFO
+    }
+    nets {
+      channel_number: 34
+      npg_type: NPG_MISSION
+    }
+    nets {
+      channel_number: 12
+      npg_type: NPG_EW
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 70
+      npg_type: NPG_MISSION
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 110
+      npg_type: NPG_MISSION
+    }
+  }
+  teams {
+    team_number: TEAM_5
+  }
+  teams {
+    team_number: TEAM_6
+    nets {
+      channel_number: 0
+      npg_type: NPG_PPLIA
+      npg_type: NPG_PPLIB
+      npg_type: NPG_SURVINFO
+    }
+    nets {
+      channel_number: 42
+      npg_type: NPG_MISSION
+    }
+    nets {
+      channel_number: 21
+      npg_type: NPG_EW
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 89
+      npg_type: NPG_MISSION
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 117
+      npg_type: NPG_MISSION
+    }
+  }
+  teams {
+    team_number: TEAM_7
+    nets {
+      channel_number: 0
+      npg_type: NPG_PPLIA
+      npg_type: NPG_PPLIB
+      npg_type: NPG_SURVINFO
+    }
+    nets {
+      channel_number: 47
+      npg_type: NPG_MISSION
+    }
+    nets {
+      channel_number: 20
+      npg_type: NPG_EW
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 79
+      npg_type: NPG_MISSION
+      npg_type: NPG_F2F
+    }
+    nets {
+      channel_number: 118
+      npg_type: NPG_MISSION
+    }
+  }
+
+}
+all_flights {
+}
