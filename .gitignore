@@ -1,2 +1,6 @@
+# Build System
 /build
 /artifacts
+
+# Python
+__pycache__/
