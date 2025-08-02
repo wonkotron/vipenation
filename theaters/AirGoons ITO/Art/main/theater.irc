@@ -1,0 +1,102 @@
+// This file contains the theater specific country and team names and also
+// the scenario strings, such as  scenario name, description.
+// This file offers some newly added features:
+// - You can specify 4 lines in the description field in the campaign
+//   select window which gives you the opprortunity for more detailed
+//   descriptions.
+// - In the bottom line of the description field you can enter the
+//   campaign duration (Max. Campaign days:) and the stalemate conditions
+//   (Stalemate (days of no activity):) like they are set in the trigger files. 
+//   Bordom hours have to be converted to days.
+// - A campaign designer can now specify an overall difficulty rating, such as
+//   Easy, Medium, Hard.
+
+///////////////////////////////////////////////////////////////
+// START CONTENT 
+///////////////////////////////////////////////////////////////
+
+// -----Country names-----
+[ADDTEXT] TXT_COUNTRY_0 "Hezbollah"
+[ADDTEXT] TXT_COUNTRY_1 "NATO"
+[ADDTEXT] TXT_COUNTRY_2 "Israel"
+[ADDTEXT] TXT_COUNTRY_3 "PA"
+[ADDTEXT] TXT_COUNTRY_4 "Jordan"
+[ADDTEXT] TXT_COUNTRY_5 "Syria"
+[ADDTEXT] TXT_COUNTRY_6 "Egypt"
+[ADDTEXT] TXT_COUNTRY_7 "Saudi Arabia"
+
+// -----Team names-----
+[ADDTEXT] TXT_TEAM_0 "Hezbollah"
+[ADDTEXT] TXT_TEAM_1 "NATO"
+[ADDTEXT] TXT_TEAM_2 "Israel"
+[ADDTEXT] TXT_TEAM_3 "PA"
+[ADDTEXT] TXT_TEAM_4 "Jordan"
+[ADDTEXT] TXT_TEAM_5 "Syria"
+[ADDTEXT] TXT_TEAM_6 "Egypt"
+[ADDTEXT] TXT_TEAM_7 "Saudi Arabia"
+
+// -----Scenario 1-----
+[ADDTEXT] TXT_SCENARIO_1 "AIR GOONS 1"	 
+[ADDTEXT] TXT_SC_1_LINE_1 "Air Goons Scenario 1"
+[ADDTEXT] TXT_SC_1_LINE_2 ""
+[ADDTEXT] TXT_SC_1_LINE_3 ""
+[ADDTEXT] TXT_SC_1_LINE_4 ""
+[ADDTEXT] TXT_SC_1_CAMP_END "14"
+[ADDTEXT] TXT_SC_1_CAMP_STALE "4"
+[ADDTEXT] TXT_SC_1_CAMP_DIFF "Medium"
+[ADDTEXT] NOT_USED "Keep this line!"
+
+// -----Scenario 2-----
+[ADDTEXT] TXT_SCENARIO_2 "AIR GOONS 2"
+[ADDTEXT] TXT_SC_2_LINE_1 "Air Goons Scenario 2"
+[ADDTEXT] TXT_SC_2_LINE_2 ""
+[ADDTEXT] TXT_SC_2_LINE_3 ""
+[ADDTEXT] TXT_SC_2_LINE_4 ""
+[ADDTEXT] TXT_SC_2_CAMP_END "25"
+[ADDTEXT] TXT_SC_2_CAMP_STALE "5"
+[ADDTEXT] TXT_SC_2_CAMP_DIFF "Medium"
+[ADDTEXT] NOT_USED "Keep this line!"
+
+// -----Scenario 3-----
+[ADDTEXT] TXT_SCENARIO_3 "AIR GOONS 3"
+[ADDTEXT] TXT_SC_3_LINE_1 "Air Goons Scenario 3"
+[ADDTEXT] TXT_SC_3_LINE_2 ""
+[ADDTEXT] TXT_SC_3_LINE_3 ""
+[ADDTEXT] TXT_SC_3_LINE_4 ""
+[ADDTEXT] TXT_SC_3_CAMP_END "14"
+[ADDTEXT] TXT_SC_3_CAMP_STALE "4"
+[ADDTEXT] TXT_SC_3_CAMP_DIFF "Medium"
+[ADDTEXT] NOT_USED "Keep this line!"
+
+// -----Scenario 4-----
+[ADDTEXT] TXT_SCENARIO_4 "AIR GOONS 4"
+[ADDTEXT] TXT_SC_4_LINE_1 "Air Goons Scenario 4"
+[ADDTEXT] TXT_SC_4_LINE_2 ""
+[ADDTEXT] TXT_SC_4_LINE_3 ""
+[ADDTEXT] TXT_SC_4_LINE_4 ""
+[ADDTEXT] TXT_SC_4_CAMP_END "25"
+[ADDTEXT] TXT_SC_4_CAMP_STALE "5"
+[ADDTEXT] TXT_SC_4_CAMP_DIFF "Hard"
+[ADDTEXT] NOT_USED "Keep this line!"
+
+// -----Scenario 5-----
+[ADDTEXT] TXT_SCENARIO_5 "AIR GOONS 5"
+[ADDTEXT] TXT_SC_5_LINE_1 "Air Goons Scenario 5"
+[ADDTEXT] TXT_SC_5_LINE_2 ""
+[ADDTEXT] TXT_SC_5_LINE_3 ""
+[ADDTEXT] TXT_SC_5_LINE_4 ""
+[ADDTEXT] TXT_SC_5_CAMP_END "25"
+[ADDTEXT] TXT_SC_5_CAMP_STALE "5"
+[ADDTEXT] TXT_SC_5_CAMP_DIFF "Medium"
+[ADDTEXT] NOT_USED "Keep this line!"
+
+// -----Scenario 6-----
+[ADDTEXT] TXT_SCENARIO_6 "AIR GOONS 6"
+[ADDTEXT] TXT_SC_6_LINE_1 "Air Goons Scenario 6"
+[ADDTEXT] TXT_SC_6_LINE_2 ""
+[ADDTEXT] TXT_SC_6_LINE_3 ""
+[ADDTEXT] TXT_SC_6_LINE_4 ""
+[ADDTEXT] TXT_SC_6_CAMP_END "14"
+[ADDTEXT] TXT_SC_6_CAMP_STALE "4"
+[ADDTEXT] TXT_SC_6_CAMP_DIFF "Medium"
+[ADDTEXT] NOT_USED "Keep this line!"
