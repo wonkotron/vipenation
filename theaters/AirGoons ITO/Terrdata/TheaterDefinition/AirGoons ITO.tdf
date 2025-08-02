@@ -44,7 +44,7 @@ musicdir Add-On Israel
 #uisounddir Sounds
 
 # Default Objects
-objectdir Add-On Israel\Terrdata\objects
+objectdir Add-On AirGoons ITO\Terrdata\objects
 
 # Misc textures
 misctexdir Terrdata\misctex
