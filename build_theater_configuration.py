@@ -32,9 +32,10 @@ class IncludeDirsEntry:
     _data = None
     
     path = None
-    exclude_subdirs = None
+    exclude = None  # to be used in shutil.ignore_patterns()
+
     def __init__(self, path, include_data):
         self._data = include_data
         
         self.path = path
-        self.exclude_subdirs = self._data.get("exclude_subdirs", [])
+        self.exclude = self._data.get("exclude", [])

@@ -1,10 +1,11 @@
 {
     "include_dirs": {
         "Terrdata/objects": {
-            "exclude_subdirs": [
+            "exclude": [
                 "KoreaObj",
                 "Models",
-                "KoreaObj_HiRes"
+                "KoreaObj_HiRes",
+                "*.bat"
             ]
         }
     }
