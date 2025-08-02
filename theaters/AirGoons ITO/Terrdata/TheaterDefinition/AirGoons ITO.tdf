@@ -29,7 +29,7 @@ terraindir Add-On Israel\Terrdata\Israel
 tileset POLAK
 
 # where Art is loaded from
-artdir Add-On Israel
+artdir Add-On AirGoons ITO
 
 # Cockpit dir
 cockpitdir Add-on Israel\Art\Ckptart
