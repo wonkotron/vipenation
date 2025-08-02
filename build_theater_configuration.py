@@ -15,7 +15,7 @@ class Configuration:
 
 class IncludeDirs:
     _data = None
-    include_dirs = None
+    entries = None
     def __init__(self, config_data):
         self._data = config_data.get("include_dirs", None)
         
@@ -23,9 +23,9 @@ class IncludeDirs:
             print("[INFO] include_dirs field is empty in the configuration json")
             return
         else:
-            include_dirs = []
+            self.entries = []
             for path, include_data in self._data.items():
-                include_dirs.append(IncludeDirsEntry(path, include_data))
+                self.entries.append(IncludeDirsEntry(path, include_data))
             
 
 class IncludeDirsEntry:
