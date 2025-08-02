@@ -30083,7 +30083,7 @@
         <Dam_Nuclear>80</Dam_Nuclear>
         <Dam_Other>0</Dam_Other>
         <RadarVehicle>0</RadarVehicle>
-        <SquadronStoresIdx>91</SquadronStoresIdx>
+        <SquadronStoresIdx>106</SquadronStoresIdx>
         <UnitIcon>10065</UnitIcon>
     </UCD>
     <UCD Num="366">
@@ -33794,7 +33794,7 @@
         <Dam_Nuclear>64</Dam_Nuclear>
         <Dam_Other>0</Dam_Other>
         <RadarVehicle>0</RadarVehicle>
-        <SquadronStoresIdx>91</SquadronStoresIdx>
+        <SquadronStoresIdx>106</SquadronStoresIdx>
         <UnitIcon>10065</UnitIcon>
     </UCD>
     <UCD Num="410">
@@ -33974,7 +33974,7 @@
         <Dam_Nuclear>64</Dam_Nuclear>
         <Dam_Other>0</Dam_Other>
         <RadarVehicle>0</RadarVehicle>
-        <SquadronStoresIdx>91</SquadronStoresIdx>
+        <SquadronStoresIdx>106</SquadronStoresIdx>
         <UnitIcon>10065</UnitIcon>
     </UCD>
     <UCD Num="412">
