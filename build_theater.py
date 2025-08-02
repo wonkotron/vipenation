@@ -36,19 +36,23 @@ def parse_arguments():
     return arguments
 
 
-def copy_from_source(source_path, build_dir, include_dirs):  
+def copy_from_source(source_path, build_dir, include_dirs):
+    print("Copying source theater data")
     for entry in include_dirs.entries:
         target_path = "{0}/{1}".format(source_path, entry.path)
         destination_path = "{0}/{1}".format(build_dir, entry.path)
-        shutil.copytree(target_path, destination_path, ignore=shutil.ignore_patterns(*entry.exclude), dirs_exist_ok=True) 
+
+        # copy from source except excludes and forbid verify build directory was cleaned
+        shutil.copytree(target_path, destination_path, ignore=shutil.ignore_patterns(*entry.exclude), dirs_exist_ok=False) 
 
 
 def copy_from_mod(mod_path, build_dir):
-    shutil.copytree(mod_path, build_dir)
+    print("Copying modified theater data")
+    shutil.copytree(mod_path, build_dir, dirs_exist_ok=True)  # overwrite data from source in build directory
 
 
 def build_artifacts(zip_path, build_path, package_name):
-    print("Build Artifacts:\t{0}".format(zip_path))
+    print("Build Artifacts:\t{0}.zip".format(zip_path))
     p = os.path.abspath("{0}/{1}".format(build_path, package_name))
     shutil.make_archive(zip_path, format="zip", root_dir=build_path)
 
@@ -78,8 +82,8 @@ def main():
     zip_path = os.path.abspath("{0}/{1} v{2}".format(arguments.artifacts, arguments.name, arguments.version))
 
     cleanup(arguments.build)
-    copy_from_mod(arguments.mod, build_dir)
     copy_from_source(source_dir, build_dir, config.include_dirs)
+    copy_from_mod(arguments.mod, build_dir)
     build_artifacts(zip_path, arguments.build, add_on_name)
     cleanup(arguments.build)
     print("Done.")
