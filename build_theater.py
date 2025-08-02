@@ -1,4 +1,5 @@
-import os, shutil, argparse, json, winreg
+import os, shutil, argparse, winreg
+from build_theater_configuration import Configuration
 
 
 def get_bms_dir():
@@ -35,25 +36,15 @@ def parse_arguments():
     return arguments
 
 
-class Configuration:
-    subdirs = None
-    def __init__(self, config_path):
-        with open(config_path, 'r') as f:
-            config_data = json.load(f)
-            self.subdirs = config_data.get("subdirs", None)
-
-
-
-def copy_from_source(source_path, build_dir, subdirs):  
-    for dir in subdirs:
-        subdir_path = "{0}/{1}".format(source_path, dir)
-        print("{0} => {1}".format(subdir_path, build_dir))
-        shutil.copytree(subdir_path, os.path.abspath("{0}/{1}".format(build_dir, dir)))
+def copy_from_source(source_path, build_dir, include_dirs):  
+    for entry in include_dirs.entries:
+        target_path = "{0}/{1}".format(source_path, entry.path)
+        destination_path = "{0}/{1}".format(build_dir, entry.path)
+        shutil.copytree(target_path, destination_path, ignore=shutil.ignore_patterns(*entry.exclude), dirs_exist_ok=True) 
 
 
 def copy_from_mod(mod_path, build_dir):
     shutil.copytree(mod_path, build_dir)
-
 
 
 def build_artifacts(zip_path, build_path, package_name):
@@ -64,7 +55,8 @@ def build_artifacts(zip_path, build_path, package_name):
 
 def cleanup(build_dir):
     print("Removing working directories")
-    shutil.rmtree(build_dir)
+    if os.path.exists(build_dir):
+        shutil.rmtree(build_dir)
 
 
 def main():
@@ -81,13 +73,13 @@ def main():
         print("[ERROR] main():  source does not exist ({0})".format(source_dir))
         return
 
-
     add_on_name = "Add-On {0}".format(arguments.name)
     build_dir = "{0}/{1}".format(arguments.build, add_on_name)
     zip_path = os.path.abspath("{0}/{1} v{2}".format(arguments.artifacts, arguments.name, arguments.version))
 
+    cleanup(arguments.build)
     copy_from_mod(arguments.mod, build_dir)
-    copy_from_source(source_dir, build_dir, config.subdirs)
+    copy_from_source(source_dir, build_dir, config.include_dirs)
     build_artifacts(zip_path, arguments.build, add_on_name)
     cleanup(arguments.build)
     print("Done.")
