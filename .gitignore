@@ -10,3 +10,5 @@ __pycache__/
 *.blend1
 sources/
 test/
+# temp:
+tiberian_dusk/Models 
