@@ -1,2 +1,3 @@
 --extra-index-url https://download.blender.org/pypi/
 bpy==3.6.0  # requires Python 3.10
+PyTexturePacker
