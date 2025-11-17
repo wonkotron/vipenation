@@ -72,7 +72,7 @@ def main():
     arguments = parse_arguments()
     config = Configuration(arguments.config)
 
-    source_dir = "{0}/{1}".format(bms_dir, arguments.source)
+    source_dir = os.path.abspath(os.path.join(bms_dir, arguments.source))
     if not os.path.exists(source_dir):
         print("[ERROR] main():  source does not exist ({0})".format(source_dir))
         return
