@@ -3,13 +3,16 @@
 #------------------
 
 # Theater name shown in the pick list
-name Korea KTO
+name AirGoons KTO
 
 # Title shown on theater page
-desc Korean Theater of Operations - WARNING: Restart BMS after any theatre change.
+desc AirGoons KTO for Falcon BMS v4.38 - WARNING: Restart BMS after any theatre change.
 
 # Image cover to display on theater page
 bitmap Terrdata\theaterdefinition\AirGoons KTO.tga
+
+# Where to load Custom imagery for Tactical Reference  
+tacrefpicsdir Art\TacRData
 
 # New Terrain assets directory location
 newterraindir TerrData\Korea\NewTerrain
@@ -19,7 +22,7 @@ newterraindir TerrData\Korea\NewTerrain
 # so probably best to put in explicitly.
  
 # Where the campaign directory is
-campaigndir Campaign
+campaigndir Add-On AirGoons KTO\campaign
 
 # Where the terrain data is
 terraindir Terrdata\korea
@@ -28,10 +31,10 @@ terraindir Terrdata\korea
 tileset POLAK
 
 # Where art is loaded from
-artdir Art
+artdir Add-On AirGoons KTO
 
 # Movies directory location (Warning: Base directory is Movies)
-moviedir 
+#moviedir 
  
 # UIsounds directory location
 #uisounddir Sounds
@@ -50,6 +53,15 @@ sounddir Sounds
 
 # Simdata directory location
 simdatadir Sim
+
+# Splash Screens
+splashdir art\splash
+
+#Subtitles
+subtitlesdir Sounds
+
+# Theater specific tacref dir
+tacrefdir Terrdata
 
 # Minimum tacan channel
 mintacan 1
