@@ -1,0 +1,61 @@
+#------------------
+# Korean TDF file
+#------------------
+
+# Theater name shown in the pick list
+name Korea KTO
+
+# Title shown on theater page
+desc Korean Theater of Operations - WARNING: Restart BMS after any theatre change.
+
+# Image cover to display on theater page
+bitmap Terrdata\theaterdefinition\AirGoons KTO.tga
+
+# New Terrain assets directory location
+newterraindir TerrData\Korea\NewTerrain
+
+# In general, you can miss out most of these, and it
+# will use the default, unless another theater changes it
+# so probably best to put in explicitly.
+ 
+# Where the campaign directory is
+campaigndir Campaign
+
+# Where the terrain data is
+terraindir Terrdata\korea
+
+# Which tileset to use - overrides the global setting in the cfg file
+tileset POLAK
+
+# Where art is loaded from
+artdir Art
+
+# Movies directory location (Warning: Base directory is Movies)
+moviedir 
+ 
+# UIsounds directory location
+#uisounddir Sounds
+
+# Default objects directory location
+objectdir Terrdata\objects
+
+# Misc textures directory location
+misctexdir Terrdata\misctex
+
+# 3d object files directory location
+3ddatadir Terrdata\objects
+
+# Sounds directory location
+sounddir Sounds
+
+# Simdata directory location
+simdatadir Sim
+
+# Minimum tacan channel
+mintacan 1
+
+# Use double resolution 2D UI map
+doubleres2dmap 1
+
+# Magnetic declination
+magneticdeclination 0
