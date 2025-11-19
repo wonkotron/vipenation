@@ -1,0 +1,24 @@
+{
+    "include_dirs": {
+        "Art": {
+            "exclude": [
+                "Ckptart",
+                "splash",
+                "TacRData"
+            ]
+        },
+        "Campaign": {
+            "exclude": [
+                "WeatherMapsUpdates"
+            ]
+        },
+        "Terrdata/objects": {
+            "exclude": [
+                "KoreaObj",
+                "Models",
+                "KoreaObj_HiRes",
+                "*.bat"
+            ]
+        }
+    }
+}
